@@ -9,4 +9,4 @@
   C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h \
   src\seos.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\inttypes.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h src\clockhms.h \
-  src\rcc.h src\timer.h src\gpio.h src\lcd.h src\keyboard.h
+  src\lcd.h src\keyboard.h src\rcc.h src\timer.h src\gpio.h

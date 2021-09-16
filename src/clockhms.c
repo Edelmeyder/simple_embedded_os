@@ -70,6 +70,8 @@ void Clockhms_Tick(void)
     hours = (hours + minuteOverflow) % 24;
 	
 		printf("\n%d : %d : %d", hours, minutes, seconds);
+		LCD_goToXY(OFFSET_X, OFFSET_Y);
+		LCD_sendString((uint8_t *)"holamundo",9);
 }
 
 /*

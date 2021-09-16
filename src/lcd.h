@@ -1,7 +1,12 @@
-#ifndef LCD_H
-#define LCD_H
+#ifndef _LCD_H
+#define _LCD_H
+
+#include "stm32f10x.h"                  // Device header
 
 #include <stdint.h>
+
+#include "lcd.h"
+#include "keyboard.h"
 
 #define LCDPORT GPIOA //puerto al que se conecta el lcd
 #define LCDIOCLK RCC_APB2ENR_IOPAEN

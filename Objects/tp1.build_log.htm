@@ -27,22 +27,29 @@ Project File Date:  09/16/2021
 <h2>Output:</h2>
 *** Using Compiler 'V6.16', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Rebuild target 'STM32F103C8'
-src/main.c(1): warning: In file included from...
-src/main.h(7): warning: In file included from...
-src/seos.h(8): warning: In file included from...
-src/clockhms.h(62): warning: no newline at end of file [-Wnewline-eof]
-#endif /* CLOCK_H_ */
-                     ^
-src/main.c(1): warning: In file included from...
-src/main.h(15): warning: In file included from...
-src/lcd.h(28): warning: no newline at end of file [-Wnewline-eof]
-#endif
-      ^
-2 warnings generated.
-compiling main.c...
 src/seos.c(1): warning: In file included from...
 src/seos.h(8): warning: In file included from...
-src/clockhms.h(62): warning: no newline at end of file [-Wnewline-eof]
+src/clockhms.h(10): warning: In file included from...
+src/lcd.h(8): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/seos.c(1): warning: In file included from...
+src/seos.h(8): warning: In file included from...
+src/clockhms.h(10): warning: In file included from...
+src/lcd.h(9): warning: In file included from...
+src/keyboard.h(10): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/seos.c(1): warning: In file included from...
+src/seos.h(8): warning: In file included from...
+src/clockhms.h(10): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/seos.c(1): warning: In file included from...
+src/seos.h(8): warning: In file included from...
+src/clockhms.h(67): warning: no newline at end of file [-Wnewline-eof]
 #endif /* CLOCK_H_ */
                      ^
 src/seos.c(4): warning: no previous extern declaration for non-static variable 'Flag_Clocktick' [-Wmissing-variable-declarations]
@@ -57,23 +64,97 @@ volatile uint16_t Flag_Keypolling;
 src/seos.c(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
 volatile uint16_t Flag_Keypolling;
          ^
-3 warnings generated.
+6 warnings generated.
 compiling seos.c...
+src/main.c(1): warning: In file included from...
+src/main.h(7): warning: In file included from...
+src/seos.h(8): warning: In file included from...
+src/clockhms.h(10): warning: In file included from...
+src/lcd.h(8): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/main.c(1): warning: In file included from...
+src/main.h(7): warning: In file included from...
+src/seos.h(8): warning: In file included from...
+src/clockhms.h(10): warning: In file included from...
+src/lcd.h(9): warning: In file included from...
+src/keyboard.h(10): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/main.c(1): warning: In file included from...
+src/main.h(7): warning: In file included from...
+src/seos.h(8): warning: In file included from...
+src/clockhms.h(10): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/main.c(1): warning: In file included from...
+src/main.h(7): warning: In file included from...
+src/seos.h(8): warning: In file included from...
+src/clockhms.h(67): warning: no newline at end of file [-Wnewline-eof]
+#endif /* CLOCK_H_ */
+                     ^
+4 warnings generated.
+compiling main.c...
 src/rcc.c(8): warning: no newline at end of file [-Wnewline-eof]
 }
  ^
 1 warning generated.
 compiling rcc.c...
 compiling gpio.c...
-src/keyboard.c(1): warning: no newline at end of file [-Wnewline-eof]
-#include "keyboard.h"
-                     ^
-src/keyboard.c(1): warning: ISO C requires a translation unit to contain at least one declaration [-Wempty-translation-unit]
-2 warnings generated.
-compiling keyboard.c...
 compiling timer.c...
+src/keyboard.c(1): warning: In file included from...
+src/keyboard.h(10): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/keyboard.c(23): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    GPIOB->ODR = ~(1<<0);
+               ~ ^~~~~~~
+src/keyboard.c(25): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    dato=GPIOB->IDR;
+        ~~~~~~~~^~~
+src/keyboard.c(35): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    GPIOB->ODR = ~(1<<1);
+               ~ ^~~~~~~
+src/keyboard.c(37): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    dato = GPIOB->IDR;
+         ~ ~~~~~~~^~~
+src/keyboard.c(47): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    GPIOB->ODR = ~(1<<2);
+               ~ ^~~~~~~
+src/keyboard.c(49): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    dato=GPIOB->IDR;
+        ~~~~~~~~^~~
+src/keyboard.c(59): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+    GPIOB->ODR = ~(1<<3);
+               ~ ^~~~~~~
+src/keyboard.c(61): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    dato=GPIOB->IDR;
+        ~~~~~~~~^~~
+src/keyboard.c(96): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+src/keyboard.c(5): warning: no previous extern declaration for non-static variable 'dato' [-Wmissing-variable-declarations]
+volatile uint8_t dato;
+                 ^
+src/keyboard.c(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+volatile uint8_t dato;
+         ^
+11 warnings generated.
+compiling keyboard.c...
 src/lcd.c(1): warning: In file included from...
-src/lcd.h(28): warning: no newline at end of file [-Wnewline-eof]
+src/lcd.h(8): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/lcd.c(1): warning: In file included from...
+src/lcd.h(9): warning: In file included from...
+src/keyboard.h(10): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/lcd.c(1): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
 #endif
       ^
 src/lcd.c(16): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
@@ -97,17 +178,93 @@ src/lcd.c(48): warning: implicit conversion changes signedness: 'int' to 'unsign
 src/lcd.c(74): warning: no newline at end of file [-Wnewline-eof]
 }
  ^
-8 warnings generated.
+10 warnings generated.
 compiling lcd.c...
 src/clockhms.c(1): warning: In file included from...
-src/clockhms.h(62): warning: no newline at end of file [-Wnewline-eof]
+src/clockhms.h(10): warning: In file included from...
+src/lcd.h(8): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/clockhms.c(1): warning: In file included from...
+src/clockhms.h(10): warning: In file included from...
+src/lcd.h(9): warning: In file included from...
+src/keyboard.h(10): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/clockhms.c(1): warning: In file included from...
+src/clockhms.h(10): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/clockhms.c(1): warning: In file included from...
+src/clockhms.h(67): warning: no newline at end of file [-Wnewline-eof]
 #endif /* CLOCK_H_ */
                      ^
-src/clockhms.c(121): warning: no newline at end of file [-Wnewline-eof]
+src/clockhms.c(123): warning: no newline at end of file [-Wnewline-eof]
 }
  ^
-2 warnings generated.
+5 warnings generated.
 compiling clockhms.c...
+src/password_manager.c(1): warning: In file included from...
+src/password_manager.h(6): warning: In file included from...
+src/keyboard.h(10): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/password_manager.c(1): warning: In file included from...
+src/password_manager.h(7): warning: In file included from...
+src/lcd.h(8): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/password_manager.c(1): warning: In file included from...
+src/password_manager.h(7): warning: In file included from...
+src/lcd.h(33): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/password_manager.c(1): warning: In file included from...
+src/password_manager.h(14): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+src/password_manager.c(31): warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                        if (Keyboard_Update(&key)) {
+                                            ^~~~
+src/keyboard.h(7): note: passing argument to parameter 'pkey' here
+char Keyboard_Update(char *pkey);
+                           ^
+src/password_manager.c(52): warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                        if (Keyboard_Update(&key)) {
+                                                            ^~~~
+src/keyboard.h(7): note: passing argument to parameter 'pkey' here
+char Keyboard_Update(char *pkey);
+                           ^
+src/password_manager.c(60): warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                        if (Keyboard_Update(&key)) {
+                                                            ^~~~
+src/keyboard.h(7): note: passing argument to parameter 'pkey' here
+char Keyboard_Update(char *pkey);
+                           ^
+src/password_manager.c(68): warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter of type 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+                                        if (Keyboard_Update(&key)) {
+                                                            ^~~~
+src/keyboard.h(7): note: passing argument to parameter 'pkey' here
+char Keyboard_Update(char *pkey);
+                           ^
+src/password_manager.c(22): warning: no previous prototype for function 'PASSWORD_MANAGER_Update' [-Wmissing-prototypes]
+void PASSWORD_MANAGER_Update(void){
+     ^
+src/password_manager.c(22): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void PASSWORD_MANAGER_Update(void){
+^
+static 
+src/password_manager.c(14): warning: no previous extern declaration for non-static variable 'key' [-Wmissing-variable-declarations]
+uint8_t key;
+        ^
+src/password_manager.c(14): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint8_t key;
+^
+10 warnings generated.
+compiling password_manager.c...
 compiling retarget_io.c...
 assembling startup_stm32f10x_md.s...
 RTE/Device/STM32F103C8/system_stm32f10x.c(167): warning: no previous extern declaration for non-static variable 'AHBPrescTable' [-Wmissing-variable-declarations]
@@ -119,9 +276,9 @@ __I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9}
 1 warning generated.
 compiling system_stm32f10x.c...
 linking...
-Program Size: Code=4610 RO-data=294 RW-data=24 ZI-data=1896  
+Program Size: Code=4926 RO-data=294 RW-data=24 ZI-data=1896  
 FromELF: creating hex file...
-".\Objects\tp1.axf" - 0 Error(s), 19 Warning(s).
+".\Objects\tp1.axf" - 0 Error(s), 48 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -166,10 +323,10 @@ Package Vendor: Keil
 
    * Component: Keil::Device:Startup:1.0.0
       Include file:  RTE_Driver\Config\RTE_Device.h
-      Source file:   Device\Source\system_stm32f10x.c
       Source file:   Device\Source\ARM\startup_stm32f10x_md.s
       Source file:   Device\Source\ARM\STM32F1xx_OPT.s
-Build Time Elapsed:  00:00:02
+      Source file:   Device\Source\system_stm32f10x.c
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

@@ -463,6 +463,16 @@
               <FileType>1</FileType>
               <FilePath>.\src\clockhms.c</FilePath>
             </File>
+            <File>
+              <FileName>password_manager.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\password_manager.c</FilePath>
+            </File>
+            <File>
+              <FileName>password_manager.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\password_manager.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -539,5 +549,14 @@
       </file>
     </files>
   </RTE>
+
+  <LayerInfo>
+    <Layers>
+      <Layer>
+        <LayName>tp1</LayName>
+        <LayPrjMark>1</LayPrjMark>
+      </Layer>
+    </Layers>
+  </LayerInfo>
 
 </Project>

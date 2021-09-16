@@ -1,5 +1,5 @@
 #include "lcd.h"
-#include "stm32f10x.h"
+
 
 // cursor position to DDRAM mapping
 #define LCD_LINE0_DDRAMADDR		0x00

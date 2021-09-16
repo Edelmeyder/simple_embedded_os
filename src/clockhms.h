@@ -1,8 +1,13 @@
 #ifndef CLOCKHMS_H_
 #define CLOCKHMS_H_
 
+#define OFFSET_X 4
+#define OFFSET_Y 0
+
 #include <inttypes.h>
 #include <stdio.h>
+
+#include "lcd.h"
 
 /*
 	hours - Valor de la hora a establecer

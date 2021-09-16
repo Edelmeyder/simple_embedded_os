@@ -7,6 +7,7 @@
 ".\objects\keyboard.o"
 ".\objects\lcd.o"
 ".\objects\clockhms.o"
+".\objects\password_manager.o"
 ".\objects\retarget_io.o"
 ".\objects\startup_stm32f10x_md.o"
 ".\objects\system_stm32f10x.o"

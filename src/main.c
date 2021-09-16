@@ -9,6 +9,9 @@ int main(void)
 	RCC_Init();
 	Timer_Init();
 	Gpio_Init();
+	 
+	LCD_init();
+	Keyboard_Init();
 	
 	/* LOOP */
 	while(1)

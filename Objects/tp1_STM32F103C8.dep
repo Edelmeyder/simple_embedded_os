@@ -1,8 +1,8 @@
 Dependencies for Project 'tp1', Target 'STM32F103C8': (DO NOT MODIFY !)
 CompilerVersion: 6160000::V6.16::ARMCLANG
-F (.\src\main.h)(0x61434B3A)()
-F (.\src\main.c)(0x61437AD6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
-I (src\main.h)(0x61434B3A)
+F (.\src\main.h)(0x6143CC65)()
+F (.\src\main.c)(0x6143CC6A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/main.o -MD)
+I (src\main.h)(0x6143CC65)
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x5825D31C)
 I (RTE\_STM32F103C8\RTE_Components.h)(0x61437CA4)
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\core_cm3.h)(0x60D48392)
@@ -14,14 +14,14 @@ I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Includ
 I (src\seos.h)(0x614376B4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x6035A266)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035A284)
-I (src\clockhms.h)(0x61437384)
+I (src\clockhms.h)(0x6143C83B)
+I (src\lcd.h)(0x6143C85E)
+I (src\keyboard.h)(0x6143CF1D)
 I (src\rcc.h)(0x61433979)
 I (src\timer.h)(0x614347AF)
 I (src\gpio.h)(0x614242B8)
-I (src\lcd.h)(0x6142587A)
-I (src\keyboard.h)(0x61437265)
 F (.\src\seos.h)(0x614376B4)()
-F (.\src\seos.c)(0x614376FB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/seos.o -MD)
+F (.\src\seos.c)(0x6143C46B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/seos.o -MD)
 I (src\seos.h)(0x614376B4)
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x5825D31C)
 I (RTE\_STM32F103C8\RTE_Components.h)(0x61437CA4)
@@ -33,7 +33,9 @@ I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Includ
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x5825D31C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x6035A266)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035A284)
-I (src\clockhms.h)(0x61437384)
+I (src\clockhms.h)(0x6143C83B)
+I (src\lcd.h)(0x6143C85E)
+I (src\keyboard.h)(0x6143CF1D)
 F (.\src\rcc.h)(0x61433979)()
 F (.\src\rcc.c)(0x61424276)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/rcc.o -MD)
 I (src\rcc.h)(0x61433979)
@@ -58,7 +60,7 @@ I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Includ
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x5825D31C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x6035A266)
 F (.\src\timer.h)(0x614347AF)()
-F (.\src\timer.c)(0x61437747)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/timer.o -MD)
+F (.\src\timer.c)(0x6143CCA6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/timer.o -MD)
 I (src\timer.h)(0x614347AF)
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x5825D31C)
 I (RTE\_STM32F103C8\RTE_Components.h)(0x61437CA4)
@@ -69,13 +71,36 @@ I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Includ
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_armclang.h)(0x60D48392)
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x5825D31C)
 I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x6035A266)
-F (.\src\keyboard.h)(0x61437265)()
-F (.\src\keyboard.c)(0x6143472F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/keyboard.o -MD)
-I (src\keyboard.h)(0x61437265)
-F (.\src\lcd.h)(0x6142587A)()
-F (.\src\lcd.c)(0x6142587C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/lcd.o -MD)
-I (src\lcd.h)(0x6142587A)
+F (.\src\keyboard.h)(0x6143CF1D)()
+F (.\src\keyboard.c)(0x6143CF1B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/keyboard.o -MD)
+I (src\keyboard.h)(0x6143CF1D)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x5825D31C)
+I (RTE\_STM32F103C8\RTE_Components.h)(0x61437CA4)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\core_cm3.h)(0x60D48392)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035A280)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_version.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_compiler.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_armclang.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x5825D31C)
+F (.\src\lcd.h)(0x6143C85E)()
+F (.\src\lcd.c)(0x6143C862)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/lcd.o -MD)
+I (src\lcd.h)(0x6143C85E)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x5825D31C)
+I (RTE\_STM32F103C8\RTE_Components.h)(0x61437CA4)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\core_cm3.h)(0x60D48392)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035A280)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_version.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_compiler.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_armclang.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x5825D31C)
+I (src\keyboard.h)(0x6143CF1D)
+F (.\src\clockhms.h)(0x6143C83B)()
+F (.\src\clockhms.c)(0x6143C8F8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/clockhms.o -MD)
+I (src\clockhms.h)(0x6143C83B)
+I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x6035A266)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035A280)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035A284)
+I (src\lcd.h)(0x6143C85E)
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x5825D31C)
 I (RTE\_STM32F103C8\RTE_Components.h)(0x61437CA4)
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\core_cm3.h)(0x60D48392)
@@ -83,12 +108,21 @@ I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Includ
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_compiler.h)(0x60D48392)
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_armclang.h)(0x60D48392)
 I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x5825D31C)
-F (.\src\clockhms.h)(0x61437384)()
-F (.\src\clockhms.c)(0x61437571)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/clockhms.o -MD)
-I (src\clockhms.h)(0x61437384)
-I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x6035A266)
+I (src\keyboard.h)(0x6143CF1D)
+F (.\src\password_manager.c)(0x6143CF20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/password_manager.o -MD)
+I (src\password_manager.h)(0x6143CF1E)
+I (src\keyboard.h)(0x6143CF1D)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x5825D31C)
+I (RTE\_STM32F103C8\RTE_Components.h)(0x61437CA4)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\core_cm3.h)(0x60D48392)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035A280)
-I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x6035A284)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_version.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_compiler.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\cmsis_armclang.h)(0x60D48392)
+I (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x5825D31C)
+I (src\lcd.h)(0x6143C85E)
+I (C:\Keil_v5\ARM\ARMCLANG\include\inttypes.h)(0x6035A266)
+F (.\src\password_manager.h)(0x6143CF1E)()
 F (C:\Users\gianf\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.6.3\Source\retarget_io.c)(0x584EC46E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O1 -ffunction-sections -Weverything -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I./RTE/Device/STM32F103C8-I./RTE/_STM32F103C8-IC:/Users/gianf/AppData/Local/Arm/Packs/ARM/CMSIS/5.8.0/CMSIS/Core/Include-IC:/Users/gianf/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.3.0/Device/Include-D__UVISION_VERSION="535" -D_RTE_ -DSTM32F10X_MD -D_RTE_-o ./objects/retarget_io.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x6035A280)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x6035A280)
